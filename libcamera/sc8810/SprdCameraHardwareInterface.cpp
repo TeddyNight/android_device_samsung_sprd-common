@@ -90,6 +90,21 @@ static preview_size_type preview_sizes[] = {
 #define UNLIKELY( exp )     (__builtin_expect( (exp) != 0, false ))
 }
 
+#define     HAL_PIXEL_FORMAT_RGBA_8888     1
+#define     HAL_PIXEL_FORMAT_RGBX_8888     2
+#define     HAL_PIXEL_FORMAT_RGB_888       3
+#define     HAL_PIXEL_FORMAT_RGB_565       4
+#define     HAL_PIXEL_FORMAT_BGRA_8888     5
+#define     HAL_PIXEL_FORMAT_RGBA_5551     6
+#define     HAL_PIXEL_FORMAT_RGBA_4444     7
+#define     HAL_PIXEL_FORMAT_YCbCr_422_SP  0x10
+#define     HAL_PIXEL_FORMAT_YCbCr_420_SP  0x11
+#define     HAL_PIXEL_FORMAT_YCbCr_422_P   0x12
+#define     HAL_PIXEL_FORMAT_YCbCr_420_P   0x13
+#define     HAL_PIXEL_FORMAT_YCbCr_422_I   0x14
+#define     HAL_PIXEL_FORMAT_YCbCr_420_I   0x15
+#define     HAL_PIXEL_FORMAT_CbYCrY_422_I  0x16
+#define     HAL_PIXEL_FORMAT_CbYCrY_420_I  0x17
 
 struct buf_addrs {
     uint32_t type;  // make sure that this is 4 byte.

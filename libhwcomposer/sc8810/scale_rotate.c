@@ -27,6 +27,23 @@
 #define SPRD_Y2R_BRIGHTNESS	2
 #define SPRD_Y2R_CLIP(_x)	((unsigned char)((_x) < 0 ? 0 : ((_x) > 255 ? 255 : (_x))))
 
+#define     HAL_PIXEL_FORMAT_RGBA_8888     1
+#define     HAL_PIXEL_FORMAT_RGBX_8888     2
+#define     HAL_PIXEL_FORMAT_RGB_888       3
+#define     HAL_PIXEL_FORMAT_RGB_565       4
+#define     HAL_PIXEL_FORMAT_BGRA_8888     5
+#define     HAL_PIXEL_FORMAT_RGBA_5551     6
+#define     HAL_PIXEL_FORMAT_RGBA_4444     7
+#define     HAL_PIXEL_FORMAT_YCbCr_422_SP  0x10
+#define     HAL_PIXEL_FORMAT_YCrCb_420_SP  0x11
+#define     HAL_PIXEL_FORMAT_YCbCr_422_P   0x12
+#define     HAL_PIXEL_FORMAT_YCbCr_420_P   0x13
+#define     HAL_PIXEL_FORMAT_YCbCr_422_I   0x14
+#define     HAL_PIXEL_FORMAT_YCbCr_420_I   0x15
+#define     HAL_PIXEL_FORMAT_CbYCrY_422_I  0x16
+#define     HAL_PIXEL_FORMAT_YCbCr_420_SP  0x19
+#define HAL_PIXEL_FORMAT_CbYCrY_420_I 0x17
+
 static void sprd_yuv420toargb888(uint32_t argb_data_ptr, uint32_t y_data_ptr, uint32_t uv_data_ptr,
 						uint32_t width, uint32_t height)
 {
